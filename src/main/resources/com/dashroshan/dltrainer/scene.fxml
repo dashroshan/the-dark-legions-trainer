@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="400.0" maxWidth="400.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dashroshan.dltrainer.Controller">
+   <children>
+      <ImageView fitHeight="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@darklegions.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle height="300.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" StackPane.alignment="BOTTOM_CENTER">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" spacing="10.0">
+               <children>
+                  <Label prefWidth="100.0" text="KEYS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="140.0" text="EFFECT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#refresh" text="SYNC">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="27.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="12.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label prefWidth="100.0" text="SHIFT + W" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="140.0" text="Get 10000 wood" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wood" alignment="CENTER_RIGHT" prefWidth="100.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="363.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="100.0" text="SHIFT + S" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="140.0" text="Get 10000 stone" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="stone" alignment="CENTER_RIGHT" prefWidth="100.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="363.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="100.0" text="SHIFT + G" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="140.0" text="Get 10000 gold" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="gold" alignment="CENTER_RIGHT" prefWidth="100.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="363.0" spacing="10.0">
+               <children>
+                  <Label prefWidth="100.0" text="SHIFT + T" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefWidth="140.0" text="Max troop space" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="troop" alignment="CENTER_RIGHT" prefWidth="100.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="TOP_LEFT" prefWidth="360.0" text="CTRL + SHIFT + M type OSSZES FASZOM and ENTER to unlock all..." textFill="WHITE">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>
