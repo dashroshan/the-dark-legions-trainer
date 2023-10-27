@@ -145,11 +145,13 @@
                   </Label>
                </children>
             </HBox>
-            <Label alignment="TOP_LEFT" prefWidth="360.0" text="CTRL + SHIFT + M type OSSZES FASZOM and ENTER to unlock all..." textFill="WHITE">
+            <Label alignment="TOP_LEFT" prefWidth="360.0" text="CTRL + SHIFT + M type cheat and ENTER to use:" textFill="WHITE">
                <padding>
                   <Insets top="10.0" />
                </padding>
             </Label>
+            <Label alignment="TOP_LEFT" prefWidth="360.0" text="OSSZES FASZOM - Reduced waiting time, unlock all, resources" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" prefWidth="360.0" text="OSSZES BAZMEG - Unlock all tech (Unlocks demon spells)" textFill="WHITE" />
          </children>
          <padding>
             <Insets bottom="15.0" left="20.0" right="20.0" />
